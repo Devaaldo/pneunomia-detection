@@ -1,5 +1,4 @@
-# Data (too large for git)
-data/
+# Dataset (too large for version control)
 chest_xray/
 Dataset-Final/
 *.zip
@@ -7,19 +6,22 @@ Dataset-Final/
 # Kaggle credentials
 kaggle.json
 
-# Saved models
-outputs/models/*.keras
-outputs/models/*.h5
+# # Trained model weights
+# outputs/models/*.keras
+# outputs/models/*.h5
 
-# Figures (generated at runtime)
-outputs/figures/*.png
-outputs/figures/*.jpg
+# Jupyter artifacts
+.ipynb_checkpoints/
+notebook/.ipynb_checkpoints/
 
 # Python
 __pycache__/
 *.pyc
 *.pyo
-.ipynb_checkpoints/
+*.pyd
+.venv/
+venv/
+*.egg-info/
 
 # OS
 .DS_Store
